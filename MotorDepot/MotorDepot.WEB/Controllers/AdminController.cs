@@ -98,7 +98,7 @@ namespace MotorDepot.WEB.Controllers
         {
             var logs = _loggerService.GetLogs(logType).ToViewModel();
 
-            ViewBag.LogTypes = new SelectList(_loggerService.GetLogTypes(), "Id", "Name");
+            ViewBag.LogTypes = new SelectList(_loggerService.GetLogTypes(), "Id", "Имя");
 
             return View(logs);
         }
